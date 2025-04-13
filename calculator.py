@@ -12,6 +12,9 @@ def divide(a, b):
     except ZeroDivisionError as error:
         print(str(error))
 def logarithm(a,b):
-    return math.log(b,a)
+    try:
+        return math.log(b,a)
+    except ValueError as error:
+        print(str(error))
 def exponent(a,b):
     return a**b
